@@ -1,0 +1,151 @@
+body {
+  background: #010203;
+  padding: 0;
+  margin: 0;
+}
+.sec1 {
+  position: absolute;
+  text-align: center;
+  display:flex;
+  flexWrap:wrap;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  container: sec1;
+  container-name: sec1;
+  margin: 0;
+  height: 40vh;
+  width: 100vw;
+}
+
+.sec1__inner {
+  color: #fffafa;
+  font-size: 15cqb;
+  font-family: Poppins_Bold;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}
+.sec1__inner2 {
+  color: #fffafa;
+  font-size: 3cqb;
+  font-family: Poppins_SemiBold;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}
+
+.sec2 {
+  position: absolute;
+  text-align: center;
+  display:flex;
+  flexWrap:wrap;
+  align-items:center;
+  justify-content: center;
+  flex-direction:row;
+  width: 100vw;
+  height: 60vh;
+  top:40vh;
+}
+
+
+.download_button {
+  background: #000000;
+  border-radius: 12px;
+  border: 2px #fff solid;
+  width: 25vw;
+  height: 8vh;
+  container: download;
+  container-name: download;
+  text-align: center;
+  display:flex;
+  flexWrap:wrap;
+  align-items:center;
+  justify-content: center;
+  flex-direction:row;
+  z-index: 1;
+}
+
+.download_button::after {
+    content: "";
+    position: absolute;
+    border: 2px #fff solid;
+    border-radius: 10px;
+    width: 25vw;
+    height: 8vh;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: white;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+.download_button:hover::after {
+    transform: scaleY(1);
+}
+
+.download_button:hover {
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.download_button_inner {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  font-size: 5cqb;
+  font-family: Poppins_Bold;
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(0deg, #000, #000 50%, #fff 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}
+
+.download_button_inner:hover {
+  transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+  background-position: 100% 100%;
+}
+
+@font-face {
+    font-family: Poppins_Bold;
+    src: url("/Assets/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins_SemiBold;
+    src: url("/Assets/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
