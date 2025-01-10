@@ -142,10 +142,10 @@ body {
 
 @font-face {
     font-family: Poppins_Bold;
-    src: url("/Assets/Poppins/Poppins-Bold.ttf") format("truetype");
+    src: url("/CHECKM8/Assets/Poppins/Poppins-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: Poppins_SemiBold;
-    src: url("/Assets/Poppins/Poppins-SemiBold.ttf") format("truetype");
+    src: url("/CHECKM8/Assets/Poppins/Poppins-SemiBold.ttf") format("truetype");
 }
